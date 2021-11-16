@@ -1,0 +1,121 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 9px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/fondo.jpg);
+    background-size: 100%;
+}
+.father-content{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 95vw;
+    height: 100vh;
+}
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: #001219;
+        display: flex;
+        height: 100px;
+        align-items: center;
+    }
+        .logo{
+            background: #005f73;
+            flex: 1 1 auto;
+            height: 40px;
+        }
+        .nav{
+            background: #005f73;
+            flex: 5 1 auto;
+            height: 40px;
+        }
+        .social-links{
+            background: #005f73;
+            flex: 1 1 auto;
+            height: 40px;
+        }
+        .texto{
+            background: #ee9b00;
+        }
+        h1{
+            background:transparent;
+            opacity: 2px;
+            text-align: center;
+        }
+.seccion{
+    background: #000;
+    display: flex;
+    height:100vh;
+
+    
+
+}
+    .articulos{
+        background: #023e8a ;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    
+    }
+        .articulo{
+            background: #03045e;
+            flex: 1 1 30%;
+            margin-top:70px ;
+        }
+        .navegacion{
+            background: #00b4d8;
+            margin-top: 15px;
+            flex: 1 1 100%;
+            height: 70px;
+            justify-content: center;
+
+        }
+        .aside{
+            background: #2a9d8f;
+            flex:1 1 auto;
+            align-items: center;
+            width: 25%;
+        }
+        .tecnologias{
+            background: #e9c46a ;
+            display: flex;
+            flex-flow: column nowrap;
+            height: 40%;
+            margin: 30px;
+            width: 70%;
+        }
+
+.pie{
+    background: #000;
+    display: flex;
+    justify-content: center;
+
+}
+h2{
+    background: #e76f51;
+}
+.contenido-articulo{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px ; 
+}
+.contenido-articulo button{
+    padding: 10px;
+    border-radius: 35px;
+    margin: 20px;
+}
+.links-nav{
+    display: flex;
+  
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/*responsive settings*/
