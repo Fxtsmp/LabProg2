@@ -1,3 +1,4 @@
+/*seteo general*/
 *{
     margin: 5px;
     padding: 5px;
@@ -8,6 +9,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(#03045e,#caf0f8);
 }
+/*seteo del contenedor padre*/
+.father-content{
+    width: 100vw;
+    height: 90vh;
+}
+/*seteo de header*/
 .header{
     background-color: #48cae4;
     display: flex;
@@ -70,6 +77,7 @@ body{
             color: #f0f0f0;
             border-radius: 9px;
         }
+        /*hover social links*/
         .social-links i:hover{
             background-color: #76c893;
             color: #000;
@@ -87,6 +95,7 @@ body{
         h1 span{
             color: #F78154;
         }
+/*seteo de seccion con el contenedor padre*/
 .seccion{
     background: transparent;
     display: flex;
@@ -132,6 +141,7 @@ body{
                 color: #f0f0f0;
                 transition: 0.5s ease;
             }
+            /*navegacion de bloque articulos*/
         .navegacion{
             background: #94d2bd;
             border-radius: 30px;
@@ -141,9 +151,7 @@ body{
             height: 70px;
             justify-content: center;
         }
-            .navegacion .links-nav ul a:hover{
-                color: #000;
-            }
+        /*aside con contenido devs..*/
         .aside{
             background-color: #94d2bd;
             display: flex;
@@ -165,12 +173,18 @@ body{
             
                 
             .eduardo-image{
-                width: 150px;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 55px;
+            }
+            .lucas-image{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
                 border-radius: 55px;
             }
         .tecnologias{
-            background: linear-gradient:rgba(0,0,0,.5);
-            z-index: 2;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
@@ -190,13 +204,15 @@ body{
         .lenguajes  i{
             font-size: 45px;
         }
-        .frameworks{
+        .aside.frameworks{
             display: flex;
-            flex-flow:column nowrap ;
-            justify-content: space-around;
             align-items: center;
         }
-    
+        .aside .frameworks h3{
+            text-align: center;
+
+        }
+  /*seteo de footer*/  
 .pie{
     background: linear-gradient(#023e8a,#0000);
     display: flex;
@@ -207,8 +223,11 @@ body{
 h2{
     background: transparent;
 }
+
+/*seteo del contenido de los articulos*/
 .contenido-articulo{
     display: flex;
+    min-width: 150px;
     flex-flow: column nowrap;
     margin: 20px ; 
     align-items: center;
@@ -245,10 +264,7 @@ h2{
         box-sizing: border-box;
     }
     .father-content{
-        height: auto;
-        width: auto;
     }
-    
     .seccion{
         flex-direction: column;
         height: auto;
@@ -281,7 +297,8 @@ h2{
             height: 88px;
         }
     .articulo{
-        height: auto;
+        width: 80%;
+        height: 80%;
         align-items: center;
     }
     .menu{
@@ -289,14 +306,4 @@ h2{
         height: auto;
     }
 
-    }
 
-@media all and (max-width:1310px) {
-    .aside p{
-        display: none;
-    }
-    .aside{
-        height: auto;
-    }
-    
-}
