@@ -6,9 +6,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(#03045e, #caf0f8);
-  justify-content: center;
-  align-items: center;
-  min-height: 1000px;
 }
 .father-content {
   margin: 10px;
@@ -21,6 +18,9 @@ body {
   flex-flow: column nowrap;
   border-radius: 30px;
   width: 100%;
+}
+h3 {
+    text-align: justify;
 }
 .menu {
   background: transparent;
@@ -193,7 +193,8 @@ h1 span {
   font-size: 45px;
 }
 .lenguajes {
-  display: flex;
+  margin-bottom:50px ;
+    display: flex;
   justify-content: space-between;
   border-radius: 30px;
 }
@@ -279,7 +280,7 @@ h2 {
   .tecnologias {
     display: flex;
     align-items: center;
-    height: auto;
+    height: 350px;
     width: auto;
   }
   .lenguajes {
